@@ -70,3 +70,24 @@ switch (solicitante)
         break;
 }
 
+if (Histrial == 4)
+{
+    estado = "rechazado";
+    motivo = "historial crediticio malo"; 
+    if (fiador == "s")
+    {
+        if (montosoli <= 2000)
+        {
+            estado = "Aprobado con condiciones";
+            motivo = "Monto minimo y fiador";
+        }
+    }
+}
+else if (Histrial == 1)
+{
+    if (estado == "Rechazado")
+    {
+        estado = "aprobado con condiciones";
+        motivo = "Exelente Historial crediticio";
+    }
+}
