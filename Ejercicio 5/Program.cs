@@ -105,3 +105,7 @@ else if(montosoli  > (ingresomensual * 6))
         estado = "Monto elevad";
     }
 }
+
+Console.WriteLine("Resultados de la solicitud");
+Console.WriteLine($"Estado: {estado}");
+Console.WriteLine($"Motivo Principal:´{motivo}");
