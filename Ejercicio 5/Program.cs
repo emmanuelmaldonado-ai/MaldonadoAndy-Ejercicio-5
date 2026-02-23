@@ -91,3 +91,17 @@ else if (Histrial == 1)
         motivo = "Exelente Historial crediticio";
     }
 }
+
+if (montosoli > (ingresomensual * 12))
+{
+    estado = "Rechazado";
+    motivo = "monto solicitado es exesivo";
+}
+else if(montosoli  > (ingresomensual * 6))
+{
+    if (estado == "Aprobado")
+    {
+        estado = "Aprobado con condiciones";
+        estado = "Monto elevad";
+    }
+}
